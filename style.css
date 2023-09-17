@@ -1,6 +1,82 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* SELECTING ALL BUTTONS */
+button {
+    border: initial; // default value accoridng to CSS Spec which is none;
+    background-color: initial;
+    color: inherit;
+    font: inherit;
+    outline: none; /* make sure to there is a visual indicator for focus state */
+}
+
+/* BASE STYLES ON BODY ELEMENT */
+.app {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* STYLES */
+.header {
+    background-image: linear-gradient(to right, #18A0BE, #622DB9);
+    height: 55px;
+    display:flex;
+}
+
+.logo {
+    align-self: center;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+/* Default for align-self was stretch, which caused the logo to stretch to fill available space. */
+
+.dd-toggle {
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0 13px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.dd-toggle:focus {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.07);
+}
+
+.dd-toggle:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.07);
+}
+
+/* this selects fourth elmement which is the crown icon */
+.dd-toggle:nth-of-type(4) { 
+    margin-left: auto;
+}
+
+.dd-toggle:last-child {
+   display: flex;
+   align-items: center;
+}
+
+
+.dd-toggle__icon {
+
+}
+
+.dd-toggle__img {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+.dd-toggle__text {
+
+}
